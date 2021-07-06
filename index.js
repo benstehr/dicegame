@@ -1,7 +1,4 @@
-//button click to initiate roll
-
 document.querySelector("button").addEventListener("click", function () {
-	//image 1 rendering
 
 	let randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
@@ -13,7 +10,6 @@ document.querySelector("button").addEventListener("click", function () {
 
 	image1.setAttribute("src", randomImageSource);
 
-	//image 2 rendering
 
 	let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
@@ -25,7 +21,6 @@ document.querySelector("button").addEventListener("click", function () {
 
 	image2.setAttribute("src", randomImageSource2);
 
-	//header change for winner and draw
 
 	if (randomNumber1 > randomNumber2) {
 		document.querySelector("h1").innerHTML = "Player 1 Wins!";
